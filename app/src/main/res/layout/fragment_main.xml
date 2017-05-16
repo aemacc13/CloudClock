@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.aemacc13.cloudclock.MainFragment">
+
+    <EditText
+        android:id="@+id/employeeID"
+        android:hint="@string/username"
+        style="@style/LoginField"/>
+
+    <ImageView
+        style="@style/FieldUnderline"/>
+
+    <EditText
+        android:id="@+id/employeePassword"
+        android:hint="@string/password"
+        style="@style/LoginField"/>
+
+    <ImageView
+        style="@style/FieldUnderline"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_margin"
+        android:background="@color/buttonColor"
+        android:textColor="@color/signinText"
+        android:text="@string/login" />
+
+
+</LinearLayout>

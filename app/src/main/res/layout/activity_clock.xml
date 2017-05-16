@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_clock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.aemacc13.cloudclock.ClockActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/clock_layout_margin">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/time_margin"
+            android:textColor="@color/signinText"
+            android:textSize="@dimen/clock_text_size"/>
+
+        <Button
+            android:id="@+id/clockIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_margin"
+            android:background="@color/buttonColor"
+            android:textColor="@color/signinText"
+            android:textSize="@dimen/button_text_size"
+            android:text="CLOCK IN"/>
+
+        <Button
+            android:id="@+id/clockOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_margin"
+            android:background="@color/buttonColor"
+            android:textColor="@color/signinText"
+            android:textSize="@dimen/button_text_size"
+            android:text="CLOCK OUT"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_navigation"
+            class="com.example.aemacc13.cloudclock.NavigationFragment"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

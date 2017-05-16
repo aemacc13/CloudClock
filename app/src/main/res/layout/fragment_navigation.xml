@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    tools:context="com.example.aemacc13.cloudclock.NavigationFragment">
+
+    <Button
+        android:id="@+id/checkHours"
+        android:text="@string/check_hours"
+        style="@style/MenueButton"/>
+
+    <Button
+        android:id="@+id/clockHours"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="@string/clock_hours"
+        style="@style/MenueButton"/>
+
+    <Button
+        android:id="@+id/signOut"
+        android:text="Sign Out"
+        style="@style/MenueButton"/>
+
+</LinearLayout>
